@@ -1,0 +1,126 @@
+### Starting build.
+# Target: heap.ml.depends, tags: { bin_annot, debug, extension:ml, file:heap.ml, ocaml, ocamldep, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamldep -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -modules heap.ml > heap.ml.depends
+# Target: comparable.ml.depends, tags: { bin_annot, debug, extension:ml, file:comparable.ml, ocaml, ocamldep, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamldep -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -modules comparable.ml > comparable.ml.depends
+# Target: comparable.cmo, tags: { bin_annot, byte, compile, debug, extension:cmo, extension:ml, file:comparable.cmo, file:comparable.ml, implem, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o comparable.cmo comparable.ml
+# Target: heap.cmo, tags: { bin_annot, byte, compile, debug, extension:cmo, extension:ml, file:heap.cmo, file:heap.ml, implem, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o heap.cmo heap.ml
++ ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o heap.cmo heap.ml
+File "heap.ml", line 127, characters 11-28:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 134, characters 11-28:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 149, characters 11-26:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 156, characters 11-26:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 176, characters 7-19:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 194, characters 7-19:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 204, characters 10-24:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 259, characters 10-33:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 265, characters 10-33:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 279, characters 16-475:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 297, characters 14-278:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+(_, Leaf)
+File "heap.ml", line 199, characters 6-7:
+Warning 27: unused variable a.
+File "heap.ml", line 206, characters 5-7:
+Warning 27: unused variable hd.
+File "heap.ml", line 204, characters 21-23:
+Warning 27: unused variable rr.
+File "heap.ml", line 229, characters 17-18:
+Warning 27: unused variable t.
+File "heap.ml", line 313, characters 8-10:
+Warning 27: unused variable ee.
+# Target: comparable.cmx, tags: { bin_annot, compile, debug, extension:cmx, extension:ml, file:comparable.cmx, file:comparable.ml, implem, native, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o comparable.cmx comparable.ml
+# Target: heap.cmx, tags: { bin_annot, compile, debug, extension:cmx, extension:ml, file:heap.cmx, file:heap.ml, implem, native, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o heap.cmx heap.ml
++ ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o heap.cmx heap.ml
+File "heap.ml", line 127, characters 11-28:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 134, characters 11-28:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 149, characters 11-26:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 156, characters 11-26:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 176, characters 7-19:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 194, characters 7-19:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 204, characters 10-24:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 259, characters 10-33:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 265, characters 10-33:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 279, characters 16-475:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+Leaf
+File "heap.ml", line 297, characters 14-278:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+(_, Leaf)
+File "heap.ml", line 199, characters 6-7:
+Warning 27: unused variable a.
+File "heap.ml", line 206, characters 5-7:
+Warning 27: unused variable hd.
+File "heap.ml", line 204, characters 21-23:
+Warning 27: unused variable rr.
+File "heap.ml", line 229, characters 17-18:
+Warning 27: unused variable t.
+File "heap.ml", line 313, characters 8-10:
+Warning 27: unused variable ee.
+# Target: heap.native, tags: { bin_annot, debug, dont_link_with, extension:native, file:heap.native, link, native, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), program, quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamlopt str.cmxa -linkpkg -g -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core comparable.cmx heap.cmx -o heap.native
+# Compilation successful.
